@@ -1,7 +1,6 @@
 {
   "name": "anime-database",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
@@ -12,5 +11,15 @@
   "dependencies": {
     "express": "^4.18.1",
     "mongoose": "^6.6.5"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/p-stirzaker/Anime-api.git"
+  },
+  "bugs": {
+    "url": "https://github.com/p-stirzaker/Anime-api/issues"
+  },
+  "homepage": "https://github.com/p-stirzaker/Anime-api#readme",
+  "description": ""
 }
