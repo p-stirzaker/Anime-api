@@ -1,31 +1,22 @@
 import logo from './logo.svg';
 import './App.css';
-import Element from './Components/element'
-import Header from './Components/Header'
+// import Element from './Components/element'
+// import Header from './Components/Header'
 import Footer from './Components/Footer'
-import PropComp from './Components/prop'
+import Props from './Components/prop'
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <Element></Element>
-        <Header></Header>
-        <Footer></Footer>
-        <PropComp></PropComp>
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        {/* <Element></Element>
+        <Header></Header> */}
       </header>
+      <Props numberProp={13} headerProp="New header"></Props>
+      <footer className='App-footer'>
+      <Footer></Footer>
+      </footer>
     </div>
   );
 }
