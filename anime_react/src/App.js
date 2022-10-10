@@ -2,6 +2,8 @@ import logo from './logo.svg';
 import './App.css';
 import Element from './Components/element'
 import Header from './Components/Header'
+import Footer from './Components/Footer'
+
 function App() {
   return (
     <div className="App">
@@ -9,6 +11,7 @@ function App() {
         <img src={logo} className="App-logo" alt="logo" />
         <Element></Element>
         <Header></Header>
+        <Footer></Footer>
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
