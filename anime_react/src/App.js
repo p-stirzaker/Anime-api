@@ -3,6 +3,7 @@ import './App.css';
 import Element from './Components/element'
 import Header from './Components/Header'
 import Footer from './Components/Footer'
+import PropComp from './Components/prop'
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
         <Element></Element>
         <Header></Header>
         <Footer></Footer>
+        <PropComp></PropComp>
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
