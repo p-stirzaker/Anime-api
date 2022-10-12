@@ -8,9 +8,10 @@ import './App.css';
 // import Clock from './Components/clock';
 // import Login from './Components/customer';
 // import Car from './Components/car';
-import Game from './Components/game';
-import GameRoom from './Components/GameRoom';
-import AddGamers from './Components/AddGamers'; 
+import Game from './States/game';
+import GameRoom from './States/GameRoom';
+import AddGamers from './States/AddGamers'; 
+import Clock from './Lifecycle/Clock2';
 
 
 
@@ -29,7 +30,7 @@ function App() {
       <Game></Game>
       <AddGamers></AddGamers>
       <GameRoom></GameRoom>
-      {/* <Clock></Clock>  */}
+      <Clock></Clock> 
        {/* <Props numberProp={13} headerProp="New header"></Props> */}
       <footer className='App-footer'>
       {/* <Footer></Footer> */}
