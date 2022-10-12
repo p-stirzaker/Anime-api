@@ -12,6 +12,8 @@ import Game from './States/game';
 import GameRoom from './States/GameRoom';
 import AddGamers from './States/AddGamers'; 
 import Clock from './Lifecycle/Clock2';
+import Shopping from './Hooks/Shopping2';
+
 
 
 
@@ -29,6 +31,7 @@ function App() {
       {/* <Login></Login> */}
       <Game></Game>
       <AddGamers></AddGamers>
+      <Shopping></Shopping>
       <GameRoom></GameRoom>
       <Clock></Clock> 
        {/* <Props numberProp={13} headerProp="New header"></Props> */}
