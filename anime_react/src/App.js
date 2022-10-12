@@ -15,8 +15,11 @@ import './App.css';
 // import Shopping from './Hooks/Shopping2';
 // import ReadMore from './Hooks/Exercise';
 // import Greet from './Hooks/Exercise2';
-import EmployeeInfo from './Requests/EmployeeInfo';
-
+// import EmployeeInfo from './Requests/EmployeeInfo';
+import Request from './Requests/CatFact';
+import Content from './StaticData/Content';
+import SubContent from './StaticData/SubContent';
+import Person from './StaticData/Person';
 
 
 
@@ -31,12 +34,16 @@ function App() {
       {/* <MilesAhead></MilesAhead> */}
       
       {/* <Login></Login> */}
+      <Request></Request>
+      <Content></Content>
+      <SubContent></SubContent>
+      <Person></Person>
       {/* <Game></Game>
       <AddGamers></AddGamers> */}
       {/* <ReadMore></ReadMore> */}
       {/* <Shopping></Shopping> */}
       {/* <Greet></Greet> */}
-      <EmployeeInfo></EmployeeInfo>
+      {/* <EmployeeInfo></EmployeeInfo> */}
       {/* <GameRoom></GameRoom> */}
       {/* <Clock></Clock>  */}
        {/* <Props numberProp={13} headerProp="New header"></Props> */}
