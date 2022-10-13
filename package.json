@@ -10,9 +10,10 @@
   "license": "ISC",
   "dependencies": {
     "express": "^4.18.1",
-    "mongoose": "^6.6.5"
+    "mongoose": "^6.6.5",
+    "react": "^18.2.0",
+    "react-router-dom": "^6.4.2"
   },
-  "devDependencies": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/p-stirzaker/Anime-api.git"

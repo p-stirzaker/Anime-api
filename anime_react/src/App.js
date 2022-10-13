@@ -1,56 +1,40 @@
 import logo from './logo.svg';
 import './App.css';
-// import Element from './Components/element'
-// import Header from './Components/Header'
-// import Footer from './Components/Footer'
-// import Props from './Components/prop'
-// import MilesAhead from './Components/milesAhead';
-// import Clock from './Components/clock';
-// import Login from './Components/customer';
-// import Car from './Components/car';
-// import Game from './States/game';
-// import GameRoom from './States/GameRoom';
-// import AddGamers from './States/AddGamers'; 
+import Params from './routing/Params';
+import History from './routing/History';
 // import Clock from './Lifecycle/Clock2';
-// import Shopping from './Hooks/Shopping2';
-// import ReadMore from './Hooks/Exercise';
-// import Greet from './Hooks/Exercise2';
-// import EmployeeInfo from './Requests/EmployeeInfo';
-import Request from './Requests/CatFact';
-import Content from './StaticData/Content';
-import SubContent from './StaticData/SubContent';
-import Person from './StaticData/Person';
+// import Request from './Requests/CatFact';
+
+
+import {
+  BrowserRouter, 
+  Routes as Switch,
+  Route,
+  Link
+} from 'react-router-dom'
 
 
 
 function App() {
   return (
-    <div className="App">
+    <div>
+      <BrowserRouter>
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        {/* <Element></Element>
-        <Header></Header> */}
+        <Link to="help">Help</Link>
+        <Link to="home">Home</Link>
+        <Link to="Test">Test</Link>
+        <Link to="12345qwerty">Rubbish</Link>
       </header>
-      {/* <MilesAhead></MilesAhead> */}
-      
-      {/* <Login></Login> */}
-      <Request></Request>
-      <Content></Content>
-      <SubContent></SubContent>
-      <Person></Person>
-      {/* <Game></Game>
-      <AddGamers></AddGamers> */}
-      {/* <ReadMore></ReadMore> */}
-      {/* <Shopping></Shopping> */}
-      {/* <Greet></Greet> */}
-      {/* <EmployeeInfo></EmployeeInfo> */}
-      {/* <GameRoom></GameRoom> */}
-      {/* <Clock></Clock>  */}
-       {/* <Props numberProp={13} headerProp="New header"></Props> */}
-      <footer className='App-footer'>
-      {/* <Footer></Footer> */}
-      {/* <Car></Car> */}
-      </footer>
+
+      <Switch> {/* Many Route */}
+        <Route path="/home" element={<h1>Home</h1>}/>
+        <Route path="/help" element={<History/>}/>
+        <Route path="/test/:id" element={<Params/>}/>
+        <Route path="*" element={<h1>235Wild663</h1>}/>
+      </Switch>
+
+      </BrowserRouter>
     </div>
   );
 }
